@@ -1,0 +1,79 @@
+$max-width: 1440px;
+$border-radius: 12px;
+$border-full: 100rem;
+$font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+  "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+  "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+/* colors */
+
+$white: #f1f1f1;
+$neutral-000: #f7f8f8;
+$neutral-100: #dde3e7;
+$neutral-200: #cbcfd6;
+$neutral-300: #afb7bf;
+$neutral-400: #8c98a4;
+$secondary-000: #20212a;
+$secondary-100: #15161e;
+$green: #86d26b;
+
+$xs: 0.25rem;
+$sm: 0.5rem;
+$md: 1rem;
+$lg: 1.25rem;
+$xl: 1.5rem;
+$xxl: 2rem;
+
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 100 to 900 */
+
+.noto-sans-light {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.noto-sans-regular {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.noto-sans-semibold {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
