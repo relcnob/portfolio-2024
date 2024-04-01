@@ -1,0 +1,17 @@
+@import "../../../globals.scss";
+
+.button {
+  border: solid 2px $secondary-000;
+  color: $secondary-000;
+  font-family: $font-body;
+  font-weight: 500;
+  background-color: transparent;
+  padding: $xs $md;
+  padding-top: calc($xs - 1px);
+  border-radius: $border-full;
+  cursor: pointer;
+
+  &:active {
+    outline: none;
+  }
+}
