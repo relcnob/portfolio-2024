@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import "./reset.css";
-import "./globals.scss";
+import "./styles/reset.css";
+import "./styles/globals.css";
+import "./styles/output.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={"wrapper"}>{children}</body>
+      <body className={`bg-white dark:bg-secondary-000`}>{children}</body>
     </html>
   );
 }

@@ -1,0 +1,22 @@
+/* @import "../../../globals.css";
+
+.button {
+  border: solid 2px $secondary-000;
+  color: $secondary-000;
+  font-family: $font-body;
+  font-weight: 500;
+  background-color: transparent;
+  padding: $xs $md;
+  padding-top: calc($xs - 1px);
+  border-radius: $border-full;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  height: 34px;
+  &:active {
+    outline: none;
+  }
+  &:hover {
+    background-color: $secondary-100;
+    color: $primary-000;
+  }
+} */

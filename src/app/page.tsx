@@ -1,12 +1,17 @@
 "use client";
 
-import styles from "./page.module.css";
 import Button from "./components/ui-elements/button/button";
+import Header from "./components/ui-elements/header/header";
+import { ThemeProvider } from "next-themes";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Button onClick={() => console.log("test")}>Let&apos;s chat</Button>
-    </main>
+    <>
+      <ThemeProvider attribute="class">
+        <main>
+          <Header />
+        </main>
+      </ThemeProvider>
+    </>
   );
 }
