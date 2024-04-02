@@ -1,7 +1,8 @@
 "use client";
 
-import Button from "./components/ui-elements/button/button";
-import Header from "./components/ui-elements/header/header";
+import Button from "./components/ui-elements/button/Button";
+import Header from "./components/ui-elements/header/Header";
+import Hero from "./components/ui-elements/hero/Hero";
 import { ThemeProvider } from "next-themes";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <ThemeProvider attribute="class">
         <main>
           <Header />
+          <Hero />
         </main>
       </ThemeProvider>
     </>
