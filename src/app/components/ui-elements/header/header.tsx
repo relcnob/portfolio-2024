@@ -11,9 +11,11 @@ const Header: React.FC = () => {
   return (
     <>
       <header
-        className={`flex flex-row w-full px-4 md:px-8 lg:px-32 py-2 justify-between items-center mx-auto fixed top-0 left-[-50%] translate-x-1/2 z-50`}
+        className={`flex flex-row w-full px-4 md:px-8 lg:px-32 py-2 justify-between items-center mx-auto fixed top-0 left-[-50%] translate-x-1/2 z-50 bg-gradient-to-b from-white to-transparent dark:from-secondary-100 dark:to-transparent`}
       >
-        <Link href="/">Relcnob</Link>
+        <Link href="/" className={`text-xl font-bold tracking-wide`}>
+          relcnob
+        </Link>
         <section className={`flex flex-row gap-7`}>
           <Button onClick={() => console.log("test")}>Let&apos;s chat</Button>
           <DarkModeToggle />
@@ -37,12 +39,12 @@ const Header: React.FC = () => {
         </section>
       </header>
       <nav
-        className={`fixed flex items-center w-full h-[100vh] backdrop-blur-xl  transition duration-500 ease-in-out ${
+        className={`fixed flex items-center w-full h-[100vh] backdrop-blur-xl  transition duration-500 ease-in-out z-20 ${
           isMenuOpen ? "translate-x-0" : "translate-x-[110%]"
         }`}
       >
         <ul
-          className={`flex flex-col gap-4 text-8xl w-full group bg-transparent `}
+          className={`flex flex-col gap-4 text-6xl xl:text-8xl w-full group bg-transparent `}
         >
           <li
             className={`px-8 cursor-pointer border-b-2 border-transparent hover:border-secondary-100 dark:hover:border-primary-000`}
