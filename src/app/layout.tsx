@@ -4,7 +4,7 @@ import "./styles/globals.css";
 import "./styles/output.css";
 
 export const metadata: Metadata = {
-  title: "Relcnob | 2024",
+  title: "Fryderyk Boncler | 2024",
   description: "Web development portfolio of Fryderyk Boncler | Relcnob",
 };
 
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-white dark:bg-secondary-100`}>{children}</body>
+      <body className={`bg-white dark:bg-secondary-200`}>{children}</body>
     </html>
   );
 }

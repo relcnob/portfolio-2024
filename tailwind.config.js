@@ -12,9 +12,11 @@ module.exports = {
       colors: {
         "primary-white": "#f1f1f1",
         "primary-000": "#dde3e7",
-        "primary-100": "#8c98a4",
+        "primary-100": "#b3bec9",
+        "primary-200": "#8c98a4",
         "secondary-000": "#20212a",
-        "secondary-100": "#15161e",
+        "secondary-100": "#24252e",
+        "secondary-200": "#15161e",
         "additional-green": "#86d26b",
       },
       fontFamily: {
@@ -24,3 +26,4 @@ module.exports = {
   },
   plugins: [],
 };
+

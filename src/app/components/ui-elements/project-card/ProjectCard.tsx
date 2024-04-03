@@ -18,7 +18,7 @@ const ProjectCard = ({ title, linkTo, tags }: Props): JSX.Element => {
         <h1 className={`font-bold text-lg md:text-2xl xl:text-5xl md:mb-2`}>
           {title}
         </h1>
-        <p className={`text-primary-100 xl:text-lg`}>{tags}</p>
+        <p className={`text-primary-200 xl:text-lg`}>{tags}</p>
       </div>
       <div
         className={`p-2 border-2 rounded-full opacity-10 group-hover:opacity-100 transition duration-300 ease-in-out`}
