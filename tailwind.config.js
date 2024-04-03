@@ -22,6 +22,9 @@ module.exports = {
       fontFamily: {
         sans: ["Noto Sans", "sans-serif"],
       },
+      transitionProperty: {
+        background: "background, background-image, opacity",
+      },
     },
   },
   plugins: [],

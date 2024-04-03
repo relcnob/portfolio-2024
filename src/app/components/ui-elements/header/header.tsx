@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   return (
     <>
       <header
-        className={`flex flex-row w-full px-4 md:px-8 lg:px-32 py-2 justify-between items-center mx-auto fixed top-0 left-[-50%] translate-x-1/2 z-50 bg-gradient-to-b from-white through-white to-transparent dark:from-secondary-200 dark:through-secondary-200 dark:to-transparent`}
+        className={`flex flex-row w-full px-4 md:px-8 lg:px-32 py-2 justify-between items-center mx-auto fixed top-0 left-[-50%] translate-x-1/2 z-50 bg-gradient-to-b from-white through-white to-transparent dark:from-secondary-200 dark:through-secondary-200 dark:to-transparent bg-transparent hover:bg-white dark:hover:bg-secondary-200`}
       >
         <Link href="/" className={`text-xl font-bold tracking-wide`}>
           relcnob

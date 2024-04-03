@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Button from "./components/ui-elements/button/Button";
 import Header from "./components/ui-elements/header/Header";
 import Hero from "./components/ui-elements/hero/Hero";
@@ -10,18 +10,16 @@ import AboutCard from "./components/ui-elements/about-card/AboutCard";
 import ProjectCard from "./components/ui-elements/project-card/ProjectCard";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "./components/ui-elements/footer/Footer";
+import CustomCursor from "./components/functionalities/custom-cursor/Custom-cursor";
 
 export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const worksRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
-
-  const scrollToAbout = () => {
-    const section = aboutRef.current;
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
+  const cursorRef = useRef(null);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [cursorBg, setCursorBg] = useState("");
 
   const aboutArr: AboutCardType[] = [
     {
@@ -44,9 +42,17 @@ export default function Home() {
     },
   ];
 
+  const scrollToAbout = () => {
+    const section = aboutRef.current;
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <>
       <ThemeProvider attribute="class">
+        <CustomCursor />
         <main>
           <Header />
           <Hero onClick={scrollToAbout} />
@@ -146,6 +152,7 @@ export default function Home() {
             </div>
           </section>
         </main>
+        <Footer />
       </ThemeProvider>
     </>
   );
