@@ -70,19 +70,28 @@ export default function Home() {
           >
             <h1 className={`text-6xl lg:text-9xl mb-12 `}>Works</h1>
             <ProjectCard
-              linkTo={"parky"}
-              title="Parking web application"
-              tags={"UI Design, Frontend"}
-            />
-            <ProjectCard
               linkTo={"comwell"}
               title="Hotel management dashboard"
               tags={"UX, UI Design, Frontend, Backend"}
+              techstack={[`Next.js`, `TypeScript`, `TailwindCSS`, `Nest.js`]}
+            />
+            <ProjectCard
+              linkTo={"parky"}
+              title="Parking web application"
+              tags={"UI Design, Frontend"}
+              techstack={[`Next.js`, `TypeScript`, `TailwindCSS`, `Prisma`]}
+            />
+            <ProjectCard
+              linkTo={"vikingfest"}
+              title="Music festival website"
+              tags={"UI Design, Frontend"}
+              techstack={[`Next.js`, `CSS`]}
             />
             <ProjectCard
               linkTo={"portfolio"}
               title="Assignment portfolio"
               tags={"UI Design, Frontend"}
+              techstack={[`JavaScript`, `TailwindCSS`]}
             />
           </section>
           <section

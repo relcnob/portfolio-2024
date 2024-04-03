@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./dark-mode-toggle.module.scss";
-import { PiMoonFill } from "react-icons/pi";
-import { PiSunDimFill } from "react-icons/pi";
+import { HiMoon } from "react-icons/hi2";
+import { HiSun } from "react-icons/hi";
 import { useTheme } from "next-themes";
 
 const DarkModeToggle = () => {
@@ -14,9 +14,9 @@ const DarkModeToggle = () => {
       className={`border-2 border-secondary-200 dark:border-white cursor-pointer rounded-full w-16 h-8 p-0 flex items-center transition-all duration-300 ease-in-out`}
     >
       <span
-        className={`text-xl flex align-center justify-center text-white dark:text-secondary-200 h-8 w-8 bg-secondary-200 dark:bg-white rounded-full transition-transform duration-300 ease-in-out dark:translate-x-full`}
+        className={`text-xl flex align-center justify-center text-white dark:text-secondary-200 h-8 w-8 ml-[-1px] bg-secondary-200 dark:bg-white rounded-full transition-transform duration-300 ease-in-out dark:translate-x-full`}
       >
-        {theme == "dark" ? <PiMoonFill /> : <PiSunDimFill />}
+        {theme == "dark" ? <HiMoon /> : <HiSun />}
       </span>
     </div>
   );

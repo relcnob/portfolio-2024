@@ -13,9 +13,9 @@ const Hero = ({ onClick }: HeroProps): JSX.Element => {
       <div className={`flex flex-row gap-0`}>
         <div className={`flex flex-col gap-0`}>
           <h1
-            className={`text-[3rem] md:text-[8rem] xl:text-[12rem] m-0 leading-[0.8] text-primary-200 font-light`}
+            className={`text-[3rem] md:text-[8rem] xl:text-[12rem] m-0 leading-[0.8] text-primary-100 font-light`}
           >
-            WEB
+            FRONTEND
           </h1>
           <h1
             className={`text-[3rem] md:text-[8rem] xl:text-[12rem] font-bold m-0 leading-[0.8]`}
