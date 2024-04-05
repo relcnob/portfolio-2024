@@ -66,7 +66,7 @@ export default function Home() {
           </section>
           <section
             ref={worksRef}
-            className={`flex flex-col px-4 xl:px-32 mb-32`}
+            className={`flex flex-col px-4 xl:px-32 mb-32 gap-4 lg:gap-8`}
           >
             <h1 className={`text-6xl lg:text-9xl mb-12 `}>Works</h1>
             <ProjectCard

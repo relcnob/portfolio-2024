@@ -18,7 +18,7 @@ const ProjectCard = ({
   return (
     <Link
       href={`/${linkTo}`}
-      className={`w-full py-4 px-2 md:py-8 border-t border-primary-000 dark:border-secondary-000 hover:border-secondary-000 dark:hover:border-primary-000 transition ease-in-out duration-300 group grid grid-cols-12 justify-between items-center group`}
+      className={`w-full p-4 md:p-8 border border-primary-000 rounded-xl dark:border-secondary-000 hover:border-secondary-000 dark:hover:border-primary-000 transition ease-in-out duration-300 group grid grid-cols-12 justify-between items-center group`}
       id={linkTo}
     >
       <div className={`pointer-events-none col-span-11 sm:col-span-7`}>

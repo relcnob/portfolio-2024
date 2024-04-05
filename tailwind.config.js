@@ -23,10 +23,10 @@ module.exports = {
         sans: ["Noto Sans", "sans-serif"],
       },
       transitionProperty: {
-        background: "background, background-image, opacity",
+        background:
+          "background, background-image, opacity, max-width, max-height",
       },
     },
   },
   plugins: [],
 };
-
