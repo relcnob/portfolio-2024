@@ -5,7 +5,7 @@ const AboutCard = ({ id, title, description }: AboutCardType): JSX.Element => {
   return (
     <article
       className={
-        "p-4 sm:p-4 2xl:pr-20 flex flex-col gap-4 h-full mb-0 border-2 rounded-lg rounded-tl-[3.8rem] bg-white dark:bg-secondary-000 border-primary-000 dark:border-secondary-100"
+        "p-4 pr-8 2xl:pr-20 flex flex-col gap-4 h-full mb-0 border-2 rounded-lg rounded-tl-[3.8rem] bg-white dark:bg-secondary-000 border-primary-000 dark:border-secondary-100"
       }
     >
       <h1

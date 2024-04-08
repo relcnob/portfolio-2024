@@ -14,8 +14,9 @@ const CustomCursor = () => {
     };
     const handleMouseOver = (e: any) => {
       const tagId = e.target.id;
+      const tagList = ["parky", "comwell", "portfolio", "vikingfest"];
 
-      if (tagId) {
+      if (tagList.includes(tagId)) {
         setCursorBg(tagId);
       } else {
         setCursorBg("");

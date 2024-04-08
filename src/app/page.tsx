@@ -17,9 +17,6 @@ export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const worksRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
-  const cursorRef = useRef(null);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [cursorBg, setCursorBg] = useState("");
 
   const aboutArr: AboutCardType[] = [
     {
