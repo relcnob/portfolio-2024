@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import "./styles/reset.css";
 import "./styles/globals.css";
 import "./styles/output.css";
+import { ThemeProvider } from "next-themes";
+import CustomCursor from "./components/functionalities/custom-cursor/Custom-cursor";
+import Footer from "./components/ui-elements/footer/Footer";
+import Header from "./components/ui-elements/header/Header";
 
 export const metadata: Metadata = {
   title: "Fryderyk Boncler | 2024",

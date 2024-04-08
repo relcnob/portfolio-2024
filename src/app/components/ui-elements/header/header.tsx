@@ -50,26 +50,30 @@ const Header: React.FC = () => {
         <ul
           className={`flex flex-col gap-4 text-6xl xl:text-8xl w-full group bg-transparent `}
         >
-          <li
+          <Link
+            href={"/"}
             className={`px-8 cursor-pointer border-b-2 border-transparent hover:border-secondary-200 dark:hover:border-primary-000`}
           >
             HOME
-          </li>
-          <li
+          </Link>
+          <Link
+            href={`/#about`}
             className={`px-8 cursor-pointer border-b-2 border-transparent hover:border-secondary-200 dark:hover:border-primary-000`}
           >
             ABOUT
-          </li>
-          <li
+          </Link>
+          <Link
+            href={`/#works`}
             className={`px-8 cursor-pointer border-b-2 border-transparent hover:border-secondary-200 dark:hover:border-primary-000`}
           >
             WORKS
-          </li>
-          <li
+          </Link>
+          <Link
+            href={`/#contact`}
             className={`px-8 cursor-pointer border-b-2 border-transparent hover:border-secondary-200 dark:hover:border-primary-000`}
           >
             CONTACT
-          </li>
+          </Link>
         </ul>
       </nav>
     </>
