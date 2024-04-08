@@ -5,7 +5,11 @@ import DarkModeToggle from "../../functionalities/dark-mode-toggle/Dark-mode-tog
 import Button from "../button/Button";
 import Link from "next/link";
 
-const Header: React.FC = () => {
+type Props = {
+  isHome?: boolean;
+};
+
+const Header = ({ isHome }: Props): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -51,24 +55,28 @@ const Header: React.FC = () => {
           className={`flex flex-col gap-4 text-6xl xl:text-8xl w-full group bg-transparent `}
         >
           <Link
+            onClick={() => isHome && setIsMenuOpen(false)}
             href={"/"}
             className={`px-8 cursor-pointer border-b-2 border-transparent hover:border-secondary-200 dark:hover:border-primary-000`}
           >
             HOME
           </Link>
           <Link
+            onClick={() => isHome && setIsMenuOpen(false)}
             href={`/#about`}
             className={`px-8 cursor-pointer border-b-2 border-transparent hover:border-secondary-200 dark:hover:border-primary-000`}
           >
             ABOUT
           </Link>
           <Link
+            onClick={() => isHome && setIsMenuOpen(false)}
             href={`/#works`}
             className={`px-8 cursor-pointer border-b-2 border-transparent hover:border-secondary-200 dark:hover:border-primary-000`}
           >
             WORKS
           </Link>
           <Link
+            onClick={() => isHome && setIsMenuOpen(false)}
             href={`/#contact`}
             className={`px-8 cursor-pointer border-b-2 border-transparent hover:border-secondary-200 dark:hover:border-primary-000`}
           >

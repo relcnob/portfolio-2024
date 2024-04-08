@@ -54,9 +54,10 @@ export default function Home() {
       <ThemeProvider attribute="class">
         <CustomCursor />
         <main>
-          <Header />
+          <Header isHome={true} />
           <Hero onClick={scrollToAbout} />
           <section
+            id="about"
             ref={aboutRef}
             className="grid lg:grid-cols-3 px-4 xl:px-32 gap-24 xl:gap-32 py-24 xl:py-48 bg-gradient-to-b from-primary-white through-white to-white dark:from-secondary-000 dark:through-secondary-200 dark:to-secondary-200"
           >
@@ -65,6 +66,7 @@ export default function Home() {
             ))}
           </section>
           <section
+            id="works"
             ref={worksRef}
             className={`flex flex-col px-4 xl:px-32 mb-32 gap-4 lg:gap-8`}
           >
@@ -98,7 +100,9 @@ export default function Home() {
             ref={contactRef}
             className={`flex flex-col px-4 xl:px-32 mb-32`}
           >
-            <h1 className={`text-6xl lg:text-9xl mb-12 `}>Contact</h1>
+            <h1 className={`text-6xl lg:text-9xl mb-12 `} id="contact">
+              Contact
+            </h1>
             <div
               className={`grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-start   justify-content-center`}
             >
