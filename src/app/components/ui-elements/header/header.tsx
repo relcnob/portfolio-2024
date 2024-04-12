@@ -15,11 +15,11 @@ const Header = ({ isHome }: Props): JSX.Element => {
   return (
     <>
       <header
-        className={`flex flex-row w-full px-4 md:px-8 lg:px-32 py-2 justify-between items-center mx-auto fixed top-0 left-[-50%] translate-x-1/2 z-50  bg-transparent hover:bg-white dark:hover:bg-secondary-200 transition-background duration-500`}
+        className={`flex flex-row w-full px-4 md:px-8 lg:px-32 py-2 justify-between items-center mx-auto fixed top-0 left-[-50%] translate-x-1/2 z-50 bg-white dark:bg-secondary-200 md:bg-transparent hover:bg-white dark:hover:bg-secondary-200 transition-background duration-500`}
       >
         <Link
           href="/"
-          className={`text-xl font-bold tracking-wide transition hover:text-secondary-000 hover:animate-pulse`}
+          className={`text-xl font-bold tracking-wide transition hover:text-secondary-000 hover:animate-pulse hover:dark:text-primary-100`}
         >
           relcnob
         </Link>
@@ -50,8 +50,8 @@ const Header = ({ isHome }: Props): JSX.Element => {
       <nav
         className={`fixed flex items-center w-full h-[100vh] transition duration-500 ease-in-out z-20 ${
           isMenuOpen
-            ? "translate-x-0 backdrop-blur-2xl"
-            : "translate-x-[110%] backdrop-blur-sm"
+            ? "opacity-100 backdrop-blur-2xl"
+            : "opacity-0 backdrop-blur-sm pointer-events-none"
         }`}
       >
         <ul

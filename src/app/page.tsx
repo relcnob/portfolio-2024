@@ -71,25 +71,25 @@ export default function Home() {
             <ProjectCard
               linkTo={"comwell"}
               title="Hotel management dashboard"
-              tags={"UX, UI Design, Frontend, Backend"}
+              tags={"UX, UI, Frontend, Backend"}
               techstack={[`Next.js`, `TypeScript`, `TailwindCSS`, `Nest.js`]}
             />
             <ProjectCard
               linkTo={"parky"}
               title="Parking web application"
-              tags={"UI Design, Frontend"}
+              tags={"UI, Frontend"}
               techstack={[`Next.js`, `TypeScript`, `TailwindCSS`, `Prisma`]}
             />
             <ProjectCard
               linkTo={"vikingfest"}
               title="Music festival website"
-              tags={"UI Design, Frontend"}
+              tags={"UI, Frontend"}
               techstack={[`Next.js`, `CSS`]}
             />
             <ProjectCard
               linkTo={"portfolio"}
               title="Assignment portfolio"
-              tags={"UI Design, Frontend"}
+              tags={"UI, Frontend"}
               techstack={[`JavaScript`, `TailwindCSS`]}
             />
           </section>
@@ -132,7 +132,9 @@ export default function Home() {
                 </Button>
               </div>
               <div className={`mx-auto max-w-64 w-64`}>
-                <h2 className={"text-xl md:text-4xl mb-6 font-bold"}>Links</h2>
+                <h2 className={"text-xl md:text-4xl mb-6 font-bold"}>
+                  Find me
+                </h2>
                 <div className={`flex flex-col gap-4`}>
                   <Link
                     href={"https://www.linkedin.com/in/fryderyk-boncler/"}

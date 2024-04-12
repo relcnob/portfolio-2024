@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   darkMode: "class",
   content: [
@@ -10,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary-white": "#f1f1f1",
+        "primary-white": "#f1f1f7",
         "primary-000": "#dde3e7",
         "primary-100": "#b3bec9",
         "primary-200": "#8c98a4",
@@ -20,7 +22,7 @@ module.exports = {
         "additional-green": "#86d26b",
       },
       fontFamily: {
-        sans: ["Noto Sans", "sans-serif"],
+        sans: ["Comfortaa", ...defaultTheme.fontFamily.sans],
       },
       transitionProperty: {
         background:

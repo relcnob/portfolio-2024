@@ -5,11 +5,11 @@ const AboutCard = ({ id, title, description }: AboutCardType): JSX.Element => {
   return (
     <article
       className={
-        "p-4 pr-8 2xl:pr-20 flex flex-col gap-4 h-full mb-0 border-2 rounded-lg rounded-tl-[3.8rem] bg-white dark:bg-secondary-000 border-primary-000 dark:border-secondary-100"
+        "p-4 pr-8 2xl:pr-20 flex flex-col gap-4 h-full mb-0 border-2 rounded-lg rounded-tl-[3.8rem] bg-white dark:bg-secondary-000 border-primary-white dark:border-secondary-100"
       }
     >
       <h1
-        className={`text-6xl p-4 text-primary-white dark:text-primary-000 mb-4 bg-primary-100 dark:bg-secondary-200 w-fit aspect-square flex items-center justify-center rounded-full`}
+        className={`text-6xl p-4 text-primary-100 dark:text-primary-000 mb-4 bg-primary-white dark:bg-secondary-200 w-fit aspect-square flex items-center justify-center rounded-full`}
       >
         {id}
       </h1>
