@@ -23,6 +23,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Comfortaa", ...defaultTheme.fontFamily.sans],
+        serif: ["Bodoni Moda", "serif"],
       },
       transitionProperty: {
         background:
