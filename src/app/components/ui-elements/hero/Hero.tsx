@@ -8,25 +8,25 @@ interface HeroProps {
 const Hero = ({ onClick }: HeroProps): JSX.Element => {
   return (
     <section
-      className={` flex w-full px-4 md:px-8 lg:px-16 2xl:px-32 items-center min-h-[100vh] bg-[url('/bg-white.png')] dark:bg-[url('/bg-black.png')] bg-cover bg-center relative`}
+      className={`flex w-full px-4 md:px-8 lg:px-16 2xl:px-32 items-center min-h-[100vh] bg-[url('/bg-white.png')] dark:bg-[url('/bg-black.png')] bg-cover bg-center relative overflow-hidden`}
     >
-      <div className={`flex flex-row gap-0`}>
+      <div className={`flex flex-row flex-wrap gap-0`}>
         <div className={`flex flex-col gap-0`}>
           <h1
-            className={`font-serif font-normal text-[3rem] md:text-[8rem] xl:text-[12rem] m-0 leading-[0.8] text-primary-200 font-light`}
+            className={`font-serif font-light text-[3rem] md:text-[7rem] xl:text-[12rem] m-0 leading-[0.8] text-secondary-200 dark:text-primary-white`}
           >
             FRONTEND
           </h1>
           <h1
-            className={`font-serif font-normal text-[3rem] md:text-[8rem] xl:text-[12rem] font-bold m-0 leading-[0.8]`}
+            className={`font-serif font-normal text-[3rem] md:text-[7rem] xl:text-[12rem] font-bold m-0 leading-[0.8] text-secondary-200 dark:text-primary-white`}
           >
             DEVELOPER
           </h1>
         </div>
-        <div className="flex flex-col gap-0 md:text-2xl xl:text-5xl justify-end leading-none mb-[2px] pl-4 text-primary-200">
-          <p>UI/UX</p>
-          <p>FRONTEND</p>
-          <p>BACKEND</p>
+        <div className="flex flex-col gap-1 md:gap-[2px] md:text-2xl xl:text-5xl justify-end mb-[4px] xl:mb-[2px] pl-2 md:pl-0 2xl:pl-4 text-secondary-200 dark:text-primary-white">
+          <p className={`xl:mb-[-2px] md:leading-none`}>UI/UX</p>
+          <p className={`pl-[2px] xl:mb-[-2px] md:leading-none`}>FRONTEND</p>
+          <p className={`md:leading-none`}>BACKEND</p>
         </div>
       </div>
       <span

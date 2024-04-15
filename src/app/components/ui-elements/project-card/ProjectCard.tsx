@@ -48,7 +48,7 @@ const ProjectCard = ({
         </p>
       </div>
       <div
-        className={`p-2 border-2 w-12 h-12 rounded-full opacity-10 group-hover:opacity-100 transition duration-300 ease-in-out pointer-events-none aspect-square col-span-1 flex items-center justify-center justify-self-end`}
+        className={`p-2 border-2 w-12 h-12 rounded-full opacity-10 group-hover:opacity-100 group-hover:border-secondary-200 group-hover:dark:border-primary-white transition duration-300 ease-in-out pointer-events-none aspect-square col-span-1 flex items-center justify-center justify-self-end`}
       >
         <FaChevronRight />
       </div>

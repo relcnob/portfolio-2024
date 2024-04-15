@@ -18,7 +18,7 @@ const AboutCard = ({ id, title, description }: AboutCardType): JSX.Element => {
       >
         {title.toUpperCase()}
       </h2>
-      <p className={`text-secondary-000 dark:text-primary-100`}>
+      <p className={`text-secondary-000 dark:text-primary-100 max-w-[48ch]`}>
         {description}
       </p>
     </article>
