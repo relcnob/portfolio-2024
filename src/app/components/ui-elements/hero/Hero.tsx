@@ -15,7 +15,7 @@ const Hero = ({ onClick }: HeroProps): JSX.Element => {
           <h1
             className={`font-serif font-light text-[3rem] md:text-[7rem] xl:text-[12rem] m-0 leading-[0.8] text-secondary-200 dark:text-primary-white`}
           >
-            FRONTEND
+            WEB
           </h1>
           <h1
             className={`font-serif font-normal text-[3rem] md:text-[7rem] xl:text-[12rem] font-bold m-0 leading-[0.8] text-secondary-200 dark:text-primary-white`}

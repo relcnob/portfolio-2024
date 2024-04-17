@@ -70,7 +70,7 @@ export default function Home() {
           >
             <h1 className={`text-6xl lg:text-9xl mb-12 flex gap-4 lg:gap-8`}>
               <span
-                className={`h-[3rem] w-[3rem] lg:h-[7rem] lg:w-[7rem] rounded aspect-square bg-secondary-200 dark:bg-white flex`}
+                className={`h-[3rem] w-[1rem] lg:h-[7rem] lg:w-[2rem] rounded aspect-square bg-secondary-200 dark:bg-white flex`}
               ></span>
               Works
             </h1>
@@ -105,7 +105,7 @@ export default function Home() {
           >
             <h1 className={`text-6xl lg:text-9xl mb-12 flex gap-4 lg:gap-8`}>
               <span
-                className={`h-[3rem] w-[3rem] lg:h-[7rem] lg:w-[7rem] rounded aspect-square bg-secondary-200 dark:bg-white flex`}
+                className={`h-[3rem] w-[1rem] lg:h-[7rem] lg:w-[2rem] rounded aspect-square bg-secondary-200 dark:bg-white flex`}
               ></span>
               Contact
             </h1>

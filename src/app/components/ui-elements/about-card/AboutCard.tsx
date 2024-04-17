@@ -9,7 +9,7 @@ const AboutCard = ({ id, title, description }: AboutCardType): JSX.Element => {
       }
     >
       <h1
-        className={`text-6xl p-4 text-primary-100 dark:text-primary-000 mb-4 bg-primary-white dark:bg-secondary-200 w-fit aspect-square flex items-center justify-center rounded-full`}
+        className={`text-6xl p-4 leading-0 text-primary-200 dark:text-primary-000 mb-4 bg-primary-white dark:bg-secondary-200 w-fit aspect-square flex items-center justify-center rounded-full`}
       >
         {id}
       </h1>

@@ -17,7 +17,7 @@ const ProjectCard = ({
 }: Props): JSX.Element => {
   return (
     <Link
-      href={`/${linkTo}`}
+      href={`/projects/${linkTo}`}
       className={`w-full p-4 md:p-8 border border-primary-000 rounded-xl dark:border-secondary-000 hover:border-secondary-000 dark:hover:border-primary-000 transition ease-in-out duration-300 group grid grid-cols-12 justify-between items-center group`}
       id={linkTo}
     >
