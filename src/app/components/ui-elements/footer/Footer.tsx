@@ -13,7 +13,7 @@ const Footer = () => {
           href={"https://github.com/relcnob"}
           className={`hover:text-additional-green transition ease-in-out duration-300`}
         >
-          relcnob
+          fryderyk boncler
         </Link>{" "}
         &copy; {currentYear}
       </p>
