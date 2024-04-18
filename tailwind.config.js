@@ -22,7 +22,7 @@ module.exports = {
         "additional-green": "#86d26b",
       },
       fontFamily: {
-        sans: ["Comfortaa", ...defaultTheme.fontFamily.sans],
+        sans: ["Comfortaa", "sans-serif"],
         serif: ["Bodoni Moda", "serif"],
       },
       transitionProperty: {
