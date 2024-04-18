@@ -58,7 +58,7 @@ const Header = ({ isHome }: Props): JSX.Element => {
         </section>
       </header>
       <nav
-        className={`fixed flex items-center w-full h-[100vh] transition duration-500 ease-in-out z-20 ${
+        className={`fixed flex items-center w-full h-[100vh] transition duration-500 ease-in-out z-20 bg-[rgba(0,0,0,0.1)] ${
           isMenuOpen
             ? "opacity-100 backdrop-blur-2xl"
             : "opacity-0 backdrop-blur-sm pointer-events-none"
