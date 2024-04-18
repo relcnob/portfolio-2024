@@ -23,7 +23,7 @@ const Hero = ({ onClick }: HeroProps): JSX.Element => {
             DEVELOPER
           </h1>
         </div>
-        <div className="flex flex-col gap-1 md:gap-[2px] md:text-2xl xl:text-5xl justify-end mb-[4px] xl:mb-[2px] pl-2 md:pl-0 2xl:pl-4 text-secondary-200 dark:text-primary-white">
+        <div className="flex flex-col gap-1 md:gap-[2px] md:text-2xl xl:text-5xl justify-end mb-[4px] xl:mb-[2px] pl-0 md:pl-0 2xl:pl-4 text-secondary-200 dark:text-primary-white">
           <p className={`xl:mb-[-2px] md:leading-none`}>UI/UX</p>
           <p className={`pl-[2px] xl:mb-[-2px] md:leading-none`}>FRONTEND</p>
           <p className={`md:leading-none`}>BACKEND</p>

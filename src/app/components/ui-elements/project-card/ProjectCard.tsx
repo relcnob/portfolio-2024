@@ -30,7 +30,9 @@ const ProjectCard = ({
           {title}
         </h1>
         <h2 className={`md:mb-4`}>{subtitle}</h2>
-        <div className={`flex flex-row gap-2 text-sm flex-wrap`}>
+        <div
+          className={`flex flex-row gap-2 text-sm flex-wrap max-w-[80%] mt-2`}
+        >
           {techstack &&
             techstack.length &&
             techstack.map((tag) => (

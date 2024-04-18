@@ -39,20 +39,28 @@ const Header = ({ isHome }: Props): JSX.Element => {
           </Button>
           <DarkModeToggle />
           <div
-            className={`grid grid-cols-2 grid-rows-2 w-8 h-8 items-center justify-center cursor-pointer transition duration-300 group`}
+            className={`grid grid-cols-2 grid-rows-2 w-8 h-8 min-w-8 min-h-8 items-center justify-center cursor-pointer transition duration-300 group`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <span
-              className={`flex bg-secondary-200 dark:bg-white w-2 h-2 rounded-full transition duration-300 group-hover:translate-x-2 group-hover:translate-y-2`}
+              className={`flex bg-secondary-200 dark:bg-white w-2 h-2 rounded-full transition duration-300 ${
+                isMenuOpen ? "translate-x-2 translate-y-2" : ""
+              }`}
             ></span>
             <span
-              className={`flex bg-secondary-200 dark:bg-white w-2 h-2 rounded-full transition duration-300 group-hover:translate-x-[-0.5rem] group-hover:translate-y-2`}
+              className={`flex bg-secondary-200 dark:bg-white w-2 h-2 rounded-full transition duration-300 ${
+                isMenuOpen ? "translate-x-[-0.5rem] translate-y-2" : ""
+              }`}
             ></span>
             <span
-              className={`flex bg-secondary-200 dark:bg-white w-2 h-2 rounded-full transition duration-300 group-hover:translate-x-2 group-hover:translate-y-[-0.5rem]`}
+              className={`flex bg-secondary-200 dark:bg-white w-2 h-2 rounded-full transition duration-300 ${
+                isMenuOpen ? "translate-x-2 translate-y-[-0.5rem]" : ""
+              }`}
             ></span>
             <span
-              className={`flex bg-secondary-200 dark:bg-white w-2 h-2 rounded-full transition duration-300 group-hover:translate-x-[-0.5rem] group-hover:translate-y-[-0.5rem]`}
+              className={`flex bg-secondary-200 dark:bg-white w-2 h-2 rounded-full transition duration-300 ${
+                isMenuOpen ? "translate-x-[-0.5rem] translate-y-[-0.5rem]" : ""
+              }`}
             ></span>
           </div>
         </section>

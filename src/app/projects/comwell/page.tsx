@@ -42,17 +42,17 @@ export default function Home() {
         <Link href="/comwell/comwell.jpg" target="_blank">
           <Image
             src="/comwell/comwell.jpg"
-            alt="Parky"
+            alt="Comwell"
             width={1920}
             height={1080}
             className={`rounded-xl w-full xl:w-full m-auto transition duration-500 ease-in-out hover:scale-105 origin-top`}
           />
         </Link>
-        <div className={`grid grid-cols-2 gap-4 mt-4 xl:gap-16 xl:my-16`}>
+        <div className={`grid grid-cols-2 gap-4 my-8 xl:gap-16 xl:my-16`}>
           <Link href="/comwell/comwell_2.jpg" target="_blank">
             <Image
               src="/comwell/comwell_2.jpg"
-              alt="comwell"
+              alt="Comwell"
               width={1920}
               height={1080}
               className={`rounded-xl w-full m-auto transition duration-500 ease-in-out hover:scale-105 origin-top`}
@@ -61,7 +61,7 @@ export default function Home() {
           <Link href="/comwell/comwell_3.jpg" target="_blank">
             <Image
               src="/comwell/comwell_3.jpg"
-              alt="comwell"
+              alt="Comwell"
               width={1920}
               height={1080}
               className={`rounded-xl w-full m-auto transition duration-500 ease-in-out hover:scale-105 origin-top`}
@@ -70,7 +70,7 @@ export default function Home() {
         </div>
         <Link
           href={"/#works"}
-          className={`text-6xl tracking-tight flex flex-row items-center justify-center gap-4 m-auto justify-self-center w-fit group text-primary-200 hover:text-secondary-200 dark:text-primary-200 dark:hover:text-white`}
+          className={`text-3xl text-center md:text-6xl tracking-tight flex flex-row items-center justify-center gap-2 md:gap-4 m-auto justify-self-center w-fit group text-primary-200 hover:text-secondary-200 dark:text-primary-200 dark:hover:text-white`}
         >
           <p
             className={

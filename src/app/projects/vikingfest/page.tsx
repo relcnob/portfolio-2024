@@ -46,7 +46,7 @@ export default function Home() {
             className={`rounded-xl w-full xl:w-full m-auto transition duration-500 ease-in-out hover:scale-105 origin-top`}
           />
         </Link>
-        <div className={`grid grid-cols-2 gap-4 mt-4 xl:gap-16 xl:my-16`}>
+        <div className={`grid grid-cols-2 gap-4 my-8 xl:gap-16 xl:my-16`}>
           <Link href="/vikingfest/vikingfest_2.jpg" target="_blank">
             <Image
               src="/vikingfest/vikingfest_2.jpg"
@@ -68,7 +68,7 @@ export default function Home() {
         </div>
         <Link
           href={"/#works"}
-          className={`text-6xl tracking-tight flex flex-row items-center justify-center gap-4 m-auto justify-self-center w-fit group text-primary-200 hover:text-secondary-200 dark:text-primary-200 dark:hover:text-white`}
+          className={`text-3xl text-center md:text-6xl tracking-tight flex flex-row items-center justify-center gap-2 md:gap-4 m-auto justify-self-center w-fit group text-primary-200 hover:text-secondary-200 dark:text-primary-200 dark:hover:text-white`}
         >
           <p
             className={
