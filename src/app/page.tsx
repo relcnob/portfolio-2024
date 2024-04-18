@@ -66,7 +66,7 @@ export default function Home() {
           <section
             id="works"
             ref={worksRef}
-            className={`flex flex-col px-4 xl:px-32 mb-32 gap-4 lg:gap-8`}
+            className={`flex flex-col px-4 xl:px-32 mb-32 gap-4 lg:gap-8 bg-white dark:bg-secondary-200 group`}
           >
             <h1 className={`text-6xl lg:text-9xl mb-12 flex gap-4 lg:gap-8`}>
               <span
@@ -76,25 +76,29 @@ export default function Home() {
             </h1>
             <ProjectCard
               linkTo={"comwell"}
-              title="Hotel management dashboard"
+              title="Comwell case project"
+              subtitle="Hotel management system"
               tags={"UX, UI, Frontend, Backend"}
               techstack={[`Next.js`, `TypeScript`, `TailwindCSS`, `Nest.js`]}
             />
             <ProjectCard
               linkTo={"parky"}
-              title="Parking web application"
-              tags={"UI, Frontend"}
+              title="Parky"
+              subtitle="Parking booking application"
+              tags={"UI, Visual design, Frontend"}
               techstack={[`Next.js`, `TypeScript`, `TailwindCSS`, `Prisma`]}
             />
             <ProjectCard
               linkTo={"vikingfest"}
-              title="Music festival website"
+              title="Vikingfest"
+              subtitle="Music festival website"
               tags={"UI, Frontend"}
               techstack={[`Next.js`, `CSS`]}
             />
             <ProjectCard
               linkTo={"portfolio"}
               title="Assignment portfolio"
+              subtitle="Personal project"
               tags={"UI, Frontend"}
               techstack={[`JavaScript`, `TailwindCSS`]}
             />

@@ -33,10 +33,10 @@ const CustomCursor = () => {
   }, []);
 
   const bgPath: { [key: string]: string } = {
-    parky: "bg-[url('/parky.jpg')]",
-    comwell: "bg-[url('/comwell.png')]",
-    portfolio: "bg-[url('/portfolio.jpg')]",
-    vikingfest: "bg-[url('/vikingfest.jpg')]",
+    parky: "bg-[url('/parky/parky.jpg')]",
+    comwell: "bg-[url('/comwell/comwell.jpg')]",
+    portfolio: "bg-[url('/portfolio/portfolio.jpg')]",
+    vikingfest: "bg-[url('/vikingfest/vikingfest.jpg')]",
   };
 
   return (

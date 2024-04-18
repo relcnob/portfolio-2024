@@ -6,6 +6,7 @@ interface Props {
   title: string;
   linkTo: string;
   tags: string;
+  subtitle: string;
   techstack: string[];
 }
 
@@ -14,6 +15,7 @@ const ProjectCard = ({
   linkTo,
   tags,
   techstack,
+  subtitle,
 }: Props): JSX.Element => {
   return (
     <Link
@@ -22,16 +24,19 @@ const ProjectCard = ({
       id={linkTo}
     >
       <div className={`pointer-events-none col-span-11 sm:col-span-7`}>
-        <h1 className={`font-bold text-lg md:text-2xl xl:text-5xl md:mb-4`}>
+        <h1
+          className={`font-bold text-lg md:text-2xl xl:text-5xl md:mb-1 xl:ml-[-4px]`}
+        >
           {title}
         </h1>
+        <h2 className={`md:mb-4`}>{subtitle}</h2>
         <div className={`flex flex-row gap-2 text-sm flex-wrap`}>
           {techstack &&
             techstack.length &&
             techstack.map((tag) => (
               <p
                 key={tag}
-                className={`px-2 py-0 border border-primary-200 text-primary-200 group-hover:border-secondary-100 group-hover:text-secondary-100 group-hover:dark:text-primary-000 group-hover:dark:border-primary-000 transition rounded-full w-fit`}
+                className={`px-2 py-0 pt-[2px] font-bold border border-primary-200 text-primary-200 group-hover:border-secondary-100 group-hover:text-secondary-100 group-hover:dark:text-primary-000 group-hover:dark:border-primary-000 transition rounded-full w-fit`}
               >
                 {tag}
               </p>

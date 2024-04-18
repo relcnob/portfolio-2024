@@ -20,9 +20,18 @@ const Header = ({ isHome }: Props): JSX.Element => {
       >
         <Link
           href="/"
-          className={`font-sans text-xl font-bold tracking-wide transition hover:text-secondary-000 hover:animate-pulse hover:dark:text-primary-100`}
+          className={`font-sans text-xl font-bold tracking-wide flex flex-row group`}
         >
-          RELCNOB {"<"}
+          <p
+            className={`transition duration-300 ease-in-out group-hover:text-primary-200 group-hover:dark:text-primary-100`}
+          >
+            RELCNOB
+          </p>
+          <p
+            className={`ml-4 opacity-0 transition duration-300 ease-in-out group-hover:opacity-100 group-hover:text-primary-200 group-hover:dark:text-primary-100 group-hover:translate-x-[-0.5rem]`}
+          >
+            {"<"}
+          </p>
         </Link>
         <section className={`flex flex-row gap-7`}>
           <Button onClick={() => window.open("mailto:contact@relcnob.com")}>

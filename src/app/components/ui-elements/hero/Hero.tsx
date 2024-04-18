@@ -13,12 +13,12 @@ const Hero = ({ onClick }: HeroProps): JSX.Element => {
       <div className={`flex flex-row flex-wrap gap-0`}>
         <div className={`flex flex-col gap-0`}>
           <h1
-            className={`font-serif font-light text-[3rem] md:text-[7rem] xl:text-[12rem] m-0 leading-[0.8] text-secondary-200 dark:text-primary-white`}
+            className={`font-serif font-light text-[3rem] md:text-[7rem] xl:text-[12rem] m-0 leading-[0.8] text-secondary-200 dark:text-primary-white tracking-tight`}
           >
             WEB
           </h1>
           <h1
-            className={`font-serif font-normal text-[3rem] md:text-[7rem] xl:text-[12rem] font-bold m-0 leading-[0.8] text-secondary-200 dark:text-primary-white`}
+            className={`font-serif font-normal text-[3rem] md:text-[7rem] xl:text-[12rem] font-bold m-0 leading-[0.8] text-secondary-200 dark:text-primary-white tracking-tight`}
           >
             DEVELOPER
           </h1>
@@ -31,7 +31,7 @@ const Hero = ({ onClick }: HeroProps): JSX.Element => {
       </div>
       <span
         onClick={onClick}
-        className={`text-4xl absolute bottom-12 lg:bottom-32 left-1/2 translate-x-[-50%] cursor-pointer border-2 border-secondary-200 dark:border-white rounded-full p-2 transition duration-300 hover:bg-secondary-200 dark:hover:bg-white dark:hover:text-secondary-200 hover:text-white dark:text-white`}
+        className={`text-4xl absolute bottom-6 2xl:bottom-32 left-1/2 translate-x-[-50%] cursor-pointer border-2 border-secondary-200 dark:border-white rounded-full p-2 transition duration-300 hover:bg-secondary-200 dark:hover:bg-white dark:hover:text-secondary-200 hover:text-white dark:text-white`}
       >
         <FaChevronDown />
       </span>
