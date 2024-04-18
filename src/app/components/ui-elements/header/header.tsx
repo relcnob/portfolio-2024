@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import DarkModeToggle from "../../functionalities/dark-mode-toggle/dark-mode-toggle";
-import Button from "../button/Button";
+import Button from "../button/button";
 import Link from "next/link";
 import { FaChevronLeft } from "react-icons/fa6";
 

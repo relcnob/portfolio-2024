@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Button from "./components/ui-elements/button/Button";
-import Header from "./components/ui-elements/header/Header";
+import Header from "./components/ui-elements/header/header";
+import Button from "./components/ui-elements/button/button";
 import Hero from "./components/ui-elements/hero/Hero";
 import { ThemeProvider } from "next-themes";
 import { AboutCardType } from "./utils/types";

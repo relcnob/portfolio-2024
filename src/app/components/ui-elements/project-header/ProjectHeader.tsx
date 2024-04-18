@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import Button from "../button/Button";
+import Button from "../button/button";
 
 type Props = {
   year: string;
