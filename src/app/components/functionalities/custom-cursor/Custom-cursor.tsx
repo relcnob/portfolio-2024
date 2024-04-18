@@ -14,8 +14,9 @@ const CustomCursor = () => {
     };
     const handleMouseOver = (e: any) => {
       const tagId = e.target.id;
+      const tagList = ["parky", "comwell", "portfolio", "vikingfest"];
 
-      if (tagId) {
+      if (tagList.includes(tagId)) {
         setCursorBg(tagId);
       } else {
         setCursorBg("");
@@ -32,9 +33,10 @@ const CustomCursor = () => {
   }, []);
 
   const bgPath: { [key: string]: string } = {
-    parky: "bg-[url('/parky.png')]",
-    comwell: "bg-[url('/comwell.png')]",
-    portfolio: "bg-[url('/portfolio.png')]",
+    parky: "bg-[url('/parky/parky.jpg')]",
+    comwell: "bg-[url('/comwell/comwell.jpg')]",
+    portfolio: "bg-[url('/portfolio/portfolio.jpg')]",
+    vikingfest: "bg-[url('/vikingfest/vikingfest.jpg')]",
   };
 
   return (
@@ -42,14 +44,12 @@ const CustomCursor = () => {
       <div
         style={{ top: position.y, left: position.x }}
         ref={cursorRef}
-        className={`p-0 fixed pointer-events-none -translate-x-1/2 -translate-y-[150%] z-50 aspect-video w-[512px] max-w-[50vw] border rounded-xl bg-white dark:bg-secondary-200 transition-background duration-300 bg-cover bg-center ${
+        className={`p-0 fixed pointer-events-none -translate-x-1/2 -translate-y-[110%] z-50 aspect-video w-[600px] max-w-[50vw] max-h-[90vh] border border-primary-000 dark:border-secondary-000 rounded-md bg-white dark:bg-secondary-200 transition-background duration-500 bg-cover bg-center ${
           cursorBg
-            ? `opacity-100 ${bgPath[cursorBg]} delay-100`
-            : "opacity-0 bg-none"
+            ? `opacity-100 ${bgPath[cursorBg]}`
+            : "opacity-0 bg-none max-w-0 max-h-0"
         }`}
-      >
-        {cursorBg}
-      </div>
+      ></div>
     </>
   );
 };

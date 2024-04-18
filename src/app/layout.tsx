@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./styles/reset.css";
 import "./styles/globals.css";
 import "./styles/output.css";
+import { ThemeProvider } from "next-themes";
+import CustomCursor from "./components/functionalities/custom-cursor/Custom-cursor";
 
 export const metadata: Metadata = {
   title: "Fryderyk Boncler | 2024",
@@ -15,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-white dark:bg-secondary-200`}>{children}</body>
+      <body className={`bg-white dark:bg-secondary-200 sans`}>{children}</body>
     </html>
   );
 }
