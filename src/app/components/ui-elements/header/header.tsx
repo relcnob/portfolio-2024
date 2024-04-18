@@ -20,12 +20,12 @@ const Header = ({ isHome }: Props): JSX.Element => {
       >
         <Link
           href="/"
-          className={`font-sans text-xl font-bold tracking-wide flex flex-row group`}
+          className={`font-sans text-sm md:text-xl font-bold tracking-wide flex flex-row group`}
         >
           <p
             className={`transition duration-300 ease-in-out group-hover:text-primary-200 group-hover:dark:text-primary-100`}
           >
-            RELCNOB
+            Fryderyk Boncler
           </p>
           <p
             className={`ml-4 opacity-0 transition duration-300 ease-in-out group-hover:opacity-100 group-hover:text-primary-200 group-hover:dark:text-primary-100 group-hover:translate-x-[-0.5rem]`}
